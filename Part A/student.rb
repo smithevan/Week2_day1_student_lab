@@ -15,12 +15,19 @@ attr_accessor :name, :cohort
   #   return @cohort
   # end
 
-  def change_student_name(new_name)
-    @name = new_name
+  # def change_student_name(new_name)
+  #   @name = new_name
+  # end
+  #
+  # def change_student_cohort(new_cohort)
+  #   @cohort = new_cohort
+  # end
+  def talk
+    return "I can talk"
   end
 
-  def change_student_cohort(new_cohort)
-    @cohort = new_cohort
-  end 
+  def say_favourite_language(favourite_lang)
+    return "I love #{favourite_lang}"
+  end
 
 end
