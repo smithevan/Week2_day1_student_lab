@@ -8,7 +8,7 @@ class TestSportsTeam < MiniTest::Test
 
   def setup
     @test_team = SportsTeam.new("Python Panthers", ["Jacob", "Jim", "Abby",
-          "Catherine", "Jen", "Matt"], "Coach Winner", 0)
+          "Catherine", "Jen", "Matt"], "Coach Winner")
   end
 
   def test_get_team_name
