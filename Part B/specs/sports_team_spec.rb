@@ -15,10 +15,14 @@ class TestSportsTeam < MiniTest::Test
     assert_equal("Python Panthers", @test_team.get_team_name)
   end
 
-  # def test_get_players
-  #   assert_equal("["Jacob", "Jim", "Abby",
-  #         "Catherine", "Jen", "Matt"]", test
-  # end 
+  def test_get_players
+    assert_equal(["Jacob", "Jim", "Abby",
+          "Catherine", "Jen", "Matt"], @test_team.get_player_names)
+  end
+
+  def test_get_coach
+    assert_equal("Coach Winner", @test_team.get_coach)
+  end
 
 
 
