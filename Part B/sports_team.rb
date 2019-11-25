@@ -24,4 +24,18 @@ attr_accessor :team_name, :team_members, :coach
   #   @coach = new_coach
   # end
 
+  def add_player(new_player)
+    @team_members.push(new_player)
+  end
+
+  def player_on_team(player_being_checked)
+    for member in @team_members
+      if member == player_being_checked
+        return true
+      end
+    end
+    return false
+  end
+  
+
 end
